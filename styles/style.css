@@ -1,8 +1,12 @@
-/* header navigatie */
+/* navigatie */
 
 header {
     font-size: 1.2em;
     font-family: "Avenir";
+}
+
+nav {
+    background-color: lightgoldenrodyellow;
 }
 
 nav > ul {
@@ -28,10 +32,27 @@ li:first-of-type {
     margin-right: auto;
 }
 
-/* about me */
+/* algemeen */
+h1, h2, h3 {
+    font-family: "Avenir";
+    font-size: 1.2em;
+    padding-left: 1em;
+    padding-top: 2em
+}
 
+p {
+    font-family: sans-serif;
+    padding-left: 1em;
+
+}
+/* about me */
 /* main work */
 
+#filter {
+    font-size: 0.8em;
+    padding-bottom: 1em;
+    
+}
 main {
     display: flex;
     justify-content: center;
@@ -43,25 +64,12 @@ main > article > a > img {
     width: auto;
     max-height: 10em;
     padding: 2em;
-    filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0); 
 }
 
-img:hover {
+main > article > a > img:hover {
     transition: .6s;
     filter: grayscale(100) blur(2px);
-}
-
-h2 {
-    font-family: "Avenir";
-    font-size: 1.2em;
-    padding-left: 1em;
-    padding-top: 2em
-}
-
-p {
-    font-family: sans-serif;
-    padding-left: 1em;
-    padding-bottom: 3em;
 }
 
 main > article > header {
@@ -70,3 +78,12 @@ main > article > header {
 }
 
 /* contact */
+
+
+#mail {
+    max-height: 2em;
+}
+
+/* media */
+
+@media
