@@ -1,0 +1,72 @@
+/* header navigatie */
+
+header {
+    font-size: 1.2em;
+    font-family: "Avenir";
+}
+
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav > ul > li {
+    list-style-type: none;
+    padding: 1em;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+li:first-of-type {
+    margin-right: auto;
+}
+
+/* about me */
+
+/* main work */
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main > article > a > img {
+    width: auto;
+    max-height: 10em;
+    padding: 2em;
+    filter: grayscale(0) blur(0);
+}
+
+img:hover {
+    transition: .6s;
+    filter: grayscale(100) blur(2px);
+}
+
+h2 {
+    font-family: "Avenir";
+    font-size: 1.2em;
+    padding-left: 1em;
+    padding-top: 2em
+}
+
+p {
+    font-family: sans-serif;
+    padding-left: 1em;
+    padding-bottom: 3em;
+}
+
+main > article > header {
+    position: absolute;
+
+}
+
+/* contact */
