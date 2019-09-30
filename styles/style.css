@@ -22,6 +22,10 @@ nav > ul > li {
     padding: 1em;
 }
 
+li:hover {
+    text-decoration: underline;   
+}
+
 nav > ul > li > a {
     text-decoration: none;
     color: black;
@@ -30,6 +34,7 @@ nav > ul > li > a {
 
 li:first-of-type {
     margin-right: auto;
+    text-decoration: none;
 }
 
 /* algemeen */
@@ -46,6 +51,7 @@ p {
 
 }
 /* about me */
+
 /* main work */
 
 #filter {
@@ -64,26 +70,39 @@ main > article > a > img {
     width: auto;
     max-height: 10em;
     padding: 2em;
-    filter: grayscale(0) blur(0); 
+    transform: scale(1);
+    transition: 0.8s ; 
+    transition-timing-function: ease-in;
 }
 
 main > article > a > img:hover {
-    transition: .6s;
+    transform: scale(1.2);
+    transition: 1.2s ; 
+    transition-timing-function: ease-out;
     filter: grayscale(100) blur(2px);
 }
 
 main > article > header {
     position: absolute;
-
 }
 
 /* contact */
 
-
 #mail {
-    max-height: 2em;
+    width: 2em;
+    height: 2em;
+    padding: 1em;
+    transform: scale(1);
+    transition: 0.2s ; 
+    transition-timing-function: ease-in;
+}
+
+#mail:hover {
+    transform: scale(1.2);
+    transition: 0.5s ; 
+    transition-timing-function: ease-out;
 }
 
 /* media */
 
-@media
+@media 
