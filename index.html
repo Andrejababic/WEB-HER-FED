@@ -15,7 +15,7 @@
                 <li><a href="#top">ANDREJA BABIC</a></li>
                 <li><a href="#aboutme">ABOUT ME</a></li>
                 <li><a href="#work">WORK</a></li>
-                <li><a href="#bottom">CONTACT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -25,67 +25,72 @@
         <p id="visual">VISUAL & UX DESIGNER</p>
         <p id="overmij">Hoi, ik ben Andreja Babic en ik ben een 21 jaar en studeer Communication and Multimedia Design aan de Hogeschool van Amsterdam. </p>
     </section>
-    <section>
-        <header>
-            <h2 id="work">
-                WORK
-            </h2>
-        </header>
-        <section>
-            <form>
-                <p>Filter</p>
-                <p id="filter">
-                    <input type="checkbox"> Individueel
-                    <input type="checkbox"> Groepsproject
-                </p>
-            </form>
-        </section>
-        <p>Hieronder is mijn werk te vinden</p>
-        <main>
-            <article>
-                <header>
-                    <p class="tekst">Project Beyond</p>
-                </header>
-                <a href="tubpage.html">
-                    <img src="images/tubb.png" alt="tub">
-                </a>
-            </article>
-            <article>
-                <a href="obapage.html">
-                    <img src="images/oba.png" alt="oba">
-                </a>
-            </article>
-            <article>
-                <a href="">
-                    <img src="images/portfolio.png" alt="web">
-                </a>
-            </article>
-            <article>
-                <a href="">
+    <header>
+        <h2 id="work">WORK</h2>
+    </header>
+    <main>
+        <article>
+            <h3>Nemo huisstijl</h3>
+            <a href="nemo.html">
                     <img src="images/nemo.png" alt="nemo">
                 </a>
-            </article>
-            <article>
-                <a href="joypage.html">
+        </article>
+        <article>
+            <h3>Oba</h3>
+            <a href="obapage.html">
+                    <img src="images/oba.png" alt="oba">
+                </a>
+        </article>
+        <article>
+            <h3>Internetstandaarden</h3>
+            <a href="">
+                    <img src="images/portfolio.png" alt="web">
+                </a>
+        </article>
+        <article>
+            <h3>IOT Tub</h3>
+            <a href="">
+                    <img src="images/tubb.png" alt="nemo">
+                </a>
+        </article>
+        <article>
+            <h3>Melkwegposter</h3>
+            <a href="joypage.html">
                     <img src="images/joy.png" alt="joy">
                 </a>
-            </article>
-            <article>
-                <a href="">
+        </article>
+        <article>
+            <h3>Slaap project</h3>
+            <a href="">
                     <img src="images/doedie.png" alt="doedie">
                 </a>
-            </article>
-        </main>
-    </section>
+        </article>
+    </main>
     <section>
-        <h3>CONTACT</h3>
-        <p id="bottom">
-            Contacteer me via mijn mail
-        </p>
-        <a href="mailto:andrejababic@outlook.com">
-            <img id="mail" src="images/outlook.svg" alt="Outlook icoon"></a>
-        <!-- Outlook Icon bron https://www.flaticon.com/free-icon/outlook_732095 !-->
+        <h4 id="contact">CONTACT</h4>
+        <form action="index.html">
+            <fieldset>
+                <legend>Contact</legend>
+
+                <label for="aanhef"> 
+                <select name="aanhef" id="aanhef">
+                    <option value="Mevrouw">Mevrouw</option>
+                    <option value="meneer">Meneer</option>
+                </select>
+                </label>
+                <label for="naam">Voor en- Achternaam</label>
+                <input placeholder="Typ hier" type="text" id="naam" required>
+
+                <label for="mail">E-Mail</label>
+                <input placeholder="Typ hier" type="text" id="mail" required>
+
+                <label for="bericht">Bericht</label>
+                <textarea name="bericht" id="bericht" cols="30" rows="10" placeholder="Typ hier..."></textarea>
+                <input type="submit" value="verstuur" id="knop">
+            </fieldset>
+        </form>
     </section>
+    <script src="js/iets.js"></script>
 </body>
 
 </html>
