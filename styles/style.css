@@ -184,6 +184,7 @@ article > a > img {
     -webkit-box-shadow: 4px 0px 29px 4px rgba(209, 201, 209, 0.59);
     -moz-box-shadow: 4px 0px 29px 4px rgba(209, 201, 209, 0.59);
     box-shadow: 4px 0px 29px 4px rgba(209, 201, 209, 0.59);
+    /*de schaduw code heb ik van deze website verkregen https://www.cssmatic.com/box-shadow */
 }
 
 /* contact */
@@ -288,6 +289,24 @@ textarea:focus {
     margin: 1em;
     margin-bottom: 4em;
     margin-top: -3em;
+}
+
+/* javascript */
+
+.blauw {
+    color: deepskyblue;
+}
+
+.rood {
+    color: darkorange;
+}
+
+.geel {
+    color: yellow;
+}
+
+.paars {
+    color: rebeccapurple;
 }
 
 /* responsive */
