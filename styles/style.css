@@ -1,5 +1,3 @@
-/* alles */
-
 /* navigatie */
 
 header {
@@ -68,6 +66,13 @@ h1 {
     padding-top: 1.2em;
     display: flex;
     justify-content: center;
+    transition: 0.5s ease;
+}
+
+h1:hover {
+    color: hotpink;
+    transform: scale(1.2);
+    transition: 0.5s ease;
 }
 
 h2 {
@@ -97,6 +102,12 @@ h4 {
     margin-bottom: 0;
     display: flex;
     justify-content: center;
+    transition: 0.5s;
+}
+
+h4:hover {
+    transform: scale(2);
+    transition: 0.5s;
 }
 
 p {
@@ -129,10 +140,11 @@ p {
     color: yellow;
     font-size: 1.6em;
     font-weight: bold;
+    writing-mode: vertical-lr;
     position: absolute;
-    margin-top: -2em;
-    margin-left: 12em;
-    margin-right: 0;
+    writing-mode: vertical-lr;
+    margin-top: 15em;
+    margin-left: -15em;
 }
 
 #overmij {
@@ -160,7 +172,11 @@ main {
     background-color: yellow;
     margin: -1em;
     height: 80vh;
+}
 
+a:focus {
+    border: 5px solid blue;
+    background-color: black;
 }
 
 main > article > a > img {
@@ -225,7 +241,7 @@ input {
 }
 
 input:focus {
-    background-color: white;
+    background-color: hotpink;
 }
 
 textarea {
@@ -238,7 +254,7 @@ textarea {
 }
 
 textarea:focus {
-    background-color: white;
+    background-color: hotpink;
 }
 
 
@@ -257,6 +273,13 @@ textarea:focus {
 
 #knop:active {
     background: hotpink;
+}
+
+#back {
+    background-image: url(../images/achtergrond.jpg),
+    url(../images/achtergrond2.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
 }
 
 /* nemo pagina */
@@ -350,10 +373,8 @@ textarea:focus {
     #visual {
         color: hotpink;
         font-size: 1.3em;
-        font-weight: bold;
-        position: absolute;
-        margin-top: -11em;
-        margin-left: 3em;
+        margin-top: 12em;
+        margin-left: -1em;
     }
     #overmij {
         color: black;
