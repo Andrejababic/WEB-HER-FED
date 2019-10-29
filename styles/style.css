@@ -142,7 +142,6 @@ p {
     font-weight: bold;
     writing-mode: vertical-lr;
     position: absolute;
-    writing-mode: vertical-lr;
     margin-top: 12em;
     margin-left: -15em;
 }
