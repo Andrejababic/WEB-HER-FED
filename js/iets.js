@@ -8,9 +8,10 @@ function showBergoeting() {
     /* new date is een javascript browser object die altijd de datum geeft 
      */
     var huidigeDatum = new Date();
-    /* met deze methode haal ik de huidige uren opvragen */
+    /* met deze methode haal ik de huidige uren opvragen 
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours */
     var huidigeTijd = huidigeDatum.getHours();
-    /* Hier ga ik met een paar if, else if, else statements aangeven binnen welke waarde ze vallen  -> tussen 0 en 6 is het bv nacht*/
+    /* Hier ga ik met een paar if, else if, else statements aangeven binnen welke waarde ze vallen  -> tussen 0 en 6 is het bv nacht */
     if (huidigeTijd >= 0 && huidigeTijd <= 6) {
         begroeting.innerHTML = begroetingen[0];
         begroeting.classList.add('paars');
